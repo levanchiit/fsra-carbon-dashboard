@@ -58,7 +58,7 @@ import {
 } from "@/lib/fsraEngine";
 import { DEFAULT_SIMULATION, runMonteCarlo, runSensitivityMatrix, SimulationConfig } from "@/lib/monteCarlo";
 
-const LOGO = "/manus-storage/fsra-compass-logo_0e1977e5.png";
+const LOGO = "/logo.jpeg";
 const HERO = "/manus-storage/fsra-carbon-ribbon-hero_5d40efad.png";
 const UPLOAD_ART = "/manus-storage/fsra-upload-illustration_28b10b8c.png";
 
