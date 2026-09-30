@@ -39,6 +39,7 @@ import {
   YAxis,
 } from "recharts";
 import { toast } from "sonner";
+import excelArt from "@shared/excel.jpeg";
 import { ScenarioForm } from "@/components/ScenarioForm";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -60,7 +61,6 @@ import { DEFAULT_SIMULATION, runMonteCarlo, runSensitivityMatrix, SimulationConf
 
 const LOGO = "/logo.jpeg";
 const HERO = "/manus-storage/fsra-carbon-ribbon-hero_5d40efad.png";
-const UPLOAD_ART = "/manus-storage/fsra-upload-illustration_28b10b8c.png";
 
 const money = new Intl.NumberFormat("vi-VN", { maximumFractionDigits: 1 });
 const ratio = new Intl.NumberFormat("vi-VN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -327,7 +327,7 @@ export default function Home() {
                 </>
               ) : (
                 <>
-                  <img src={UPLOAD_ART} alt="Minh họa tệp Excel và JSON" className="upload-art" />
+                  <img src={excelArt} alt="Minh họa tệp Excel và JSON" className="upload-art" />
                   <h3>{isDragging ? "Thả tệp để phân tích" : "Kéo tệp vào workbench"}</h3>
                   <p>Đọc worksheet <code>Inputs</code> hoặc mảng JSON. Chấp nhận XLSX, XLS, CSV và JSON.</p>
                   <div className="drop-actions">
